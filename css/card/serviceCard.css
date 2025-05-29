@@ -1,0 +1,66 @@
+/* Services Section - Unsere Leistungen */
+.service {
+    background: #f8f9fa;
+    padding-top: 10px;
+}
+
+.service h2 {
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    color: #333;
+}
+/* grid - Anordnungen der Karten */
+.service-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.service-card {
+    background: whitesmoke;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.service-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(135deg, #2F00FF 10%, #000000 90%);
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+.service-card i {
+    font-size: 3rem;
+    background: linear-gradient(135deg, #2F00FF 0%, #000000 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 1rem;
+}
+
+.products-row {
+  display: flex;
+    gap: 3rem;
+ flex-wrap: wrap;
+}
+.price-box {
+display: flex;
+justify-content: space-between;
+border: 2px solid #2F00FF; /* blau */
+padding: 0.5rem 1rem;
+margin-bottom: 1rem;
+}
+
